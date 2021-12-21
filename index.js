@@ -1,12 +1,7 @@
-/*
-yarn init -y
-yarn add unique-names-generator
-node index.js
- */
 const {uniqueNamesGenerator, animals, colors} = require("unique-names-generator");
 
-const start = 1000; // Starting seed.
-const nTrying = 100; // Number of try
+const start = 1000; // Starting seed. Change this value to any number > 0.
+const nTrying = 100; // Number of try.
 const set = {};
 for(let s=start;s<=start+nTrying;s++){
   const un = uniqueNamesGenerator({
